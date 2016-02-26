@@ -1,5 +1,7 @@
-wget http://dl.4players.de/ts/releases/3.0.12.2/teamspeak3-server_linux_amd64-3.0.12.2.tar.bz2;
+rm -f teamspeak3-server_linux_amd64-3.0.12.2.tar.bz2;
+wget http://dl.4players.de/ts/releases/3.0.12.2/teamspeak3-server_linux_amd64-3.0.12.2.tar.bz2 -O teamspeak3-server_linux_amd64-3.0.12.2.tar.bz2;
 tar xzf teamspeak3-server_linux-amd64-3.0.12.2.tar.bz2;
+deluser teamspeak;
 sudo adduser --disabled-login teamspeak;
 sudo mv teamspeak3-server_linux-amd64 /usr/local/teamspeak;
 sudo chown -R teamspeak:teamspeak /usr/local/teamspeak;
