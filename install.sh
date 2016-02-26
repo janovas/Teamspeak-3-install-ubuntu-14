@@ -1,7 +1,6 @@
-sudo service teamspeak stop;
+sudo userdel -r teamspeak;
 sudo update-rc.d -f teamspeak remove;
 sudo rm -f /etc/init.d/teamspeak;
-sudo userdel -r teamspeak;
 sudo rm -f teamspeak3-server_linux-amd64-3.0.11.4.tar.gz;
 wget http://dl.4players.de/ts/releases/3.0.11.4/teamspeak3-server_linux-amd64-3.0.11.4.tar.gz -O teamspeak3-server_linux-amd64-3.0.11.4.tar.gz;
 tar xzf teamspeak3-server_linux-amd64-3.0.11.4.tar.gz;
